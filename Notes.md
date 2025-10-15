@@ -191,3 +191,110 @@ Bootstrap (RWD)
 
 Responsive web designs
 
+Javascrpit Variables
+1. let (local scoped)
+2. var (global scoped)
+3. const (constant)
+
+Local Scoped (let):
+a variable cannot be accessed outside a function without defining.
+
+Global Scope (var):
+a variable can be accessed outside a function without defining.
+
+print statement in Document Page:
+docoment.write(variable);
+
+Debugging:
+console.log(variable)
+
+
+data types in js
+1.primitive
+2.non-primitive
+
+1. Primitive Data Types
+a. String: Textual data.
+b. Number: Integers, floating-point numbers, special values like NaN and Infinity.
+c. Boolean: Logical values (true or false).
+d. Undefined: Variable declared but not assigned a value
+e. Null: Intentional absence of value.
+f. Symbol: Unique identifiers (ES6). (ES6= ECMAScrpit 2015 (ES6))
+
+
+2.  Non-Primitive Data Types
+a. Object: Key-value pairs. {}
+b. Array: Indexed collections. []
+c .Function: Reusable blocks of code. ()
+
+
+1.[] 
+Array
+2.{}
+Object
+3.()
+Function
+4.[{}]
+Array of Object
+
+array length = 1,2,3,4,5
+index = array length -1 (n-1) = 4
+
+
+Operators =
+
+1. Arithmetic Operators= Used for mathematical calculations.
+
+Operator | Description      | Example            | Result
+a. +         Addition          5 + 3       =          8
+b. -       Subtraction         5 - 3       =          2
+c. *      Multiplication       5 * 3       =          15
+d. /        Division           5 / 2       =          2.5
+e. %    Modulus (remainder)    5 % 2       =          1
+f. **    Exponentiation        5 ** 2      =          25
+g. ++       Increment         let x =5;     x++  =     6
+h. --      Decrement          let x =5;     x--  =     4
+
+increment 
+1. pre increment
+2. post increment
+
+
+2. Assignment Operators= Used to assign values to variables.
+
+Operator | Description         | Example        | Equivalent To
+a. =        Assignment            x = 10
+b. +=      Add and Assign.        x += 5              x = x + 5
+c. -=    Subtract and Assign      x -= 5              x = x - 5
+d. *=    Multiply and Assign      x *= 5              x = x * 5
+e. /=    Divide and Assign.       x /= 5              x = x / 5
+f. %=    Modulus and Assign       x %= 5              x = x % 5
+g. **=   Exponentiation Assign.   x **= 2              x = x ** 2
+
+3. Comparison Operators = Used to compare two values.
+
+Operator | Description      | Example           | Result
+
+a. (==).    Equal to 5         == "5"                TRUE
+b. (===).   Strict equal       5===5                 True
+c.  ===       (type+value)       5 === "5"           FALSE
+d. !=       Not equal.           5 != "5"            FALSE
+e. !==    Strict not equal       5 !== "5".          TRUE
+f. >      Greater than           5 > 3               TRUE
+g.<       Less than              5 < 3               FALSE
+h. >=   Greater than or equal    5 >= 5              TRUE
+i. <=    Less than or equal      5 <= 3              FALSE
+
+
+4. Logical Operators = Used for logical operations.
+Operator | Description | Example
+a.  &&     Logical AND. true && false → false
+b. | |      Logical OR.    a || b
+c. !       Logical NOT.   !true → false
+
+
+5. String Operators=Used to manipulate strings.
+
+Operator   |   Description             | Example                         | Result
+a. +         String Concatenation         "Hello" + "World" =                   "Hello World"
+b. +=.       Concatenation assign       let x = "Hi "; x += "Adil"; =           "Hi Adil"
