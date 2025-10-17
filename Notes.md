@@ -215,7 +215,7 @@ data types in js
 
 1. Primitive Data Types
 a. String: Textual data.
-b. Number: Integers, floating-point numbers, special values like NaN and Infinity.
+b. Number: Integers, floating-point numbers.
 c. Boolean: Logical values (true or false).
 d. Undefined: Variable declared but not assigned a value
 e. Null: Intentional absence of value.
@@ -228,6 +228,16 @@ b. Array: Indexed collections. []
 c .Function: Reusable blocks of code. ()
 
 
+variables
+
+let = local scoped
+var = global scoped
+const = constant
+
+hoisting
+a variable can be used before declaraion, it called as hositing, to avoid hositing use use the strict mode(use strict) in script. 
+
+
 1.[] 
 Array
 2.{}
@@ -236,6 +246,11 @@ Object
 Function
 4.[{}]
 Array of Object
+
+
+increment 
+1. pre increment
+2. post increment
 
 array length = 1,2,3,4,5
 index = array length -1 (n-1) = 4
@@ -255,10 +270,6 @@ f. **    Exponentiation        5 ** 2      =          25
 g. ++       Increment         let x =5;     x++  =     6
 h. --      Decrement          let x =5;     x--  =     4
 
-increment 
-1. pre increment
-2. post increment
-
 
 2. Assignment Operators= Used to assign values to variables.
 
@@ -269,7 +280,7 @@ c. -=    Subtract and Assign      x -= 5              x = x - 5
 d. *=    Multiply and Assign      x *= 5              x = x * 5
 e. /=    Divide and Assign.       x /= 5              x = x / 5
 f. %=    Modulus and Assign       x %= 5              x = x % 5
-g. **=   Exponentiation Assign.   x **= 2              x = x ** 2
+g. **=   Exponentiation Assign.   x **= 2             x = x ** 2
 
 3. Comparison Operators = Used to compare two values.
 
@@ -298,3 +309,11 @@ c. !       Logical NOT.   !true → false
 Operator   |   Description             | Example                         | Result
 a. +         String Concatenation         "Hello" + "World" =                   "Hello World"
 b. +=.       Concatenation assign       let x = "Hi "; x += "Adil"; =           "Hi Adil"
+
+
+String = ""
+
+Boolean = true/false (1/0)
+
+Number = 123
+
