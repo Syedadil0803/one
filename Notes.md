@@ -286,7 +286,7 @@ g. **=   Exponentiation Assign.   x **= 2             x = x ** 2
 
 Operator | Description      | Example           | Result
 
-a. (==).    Equal to 5         == "5"                TRUE
+a. (==).    Equal to           5== "5"                TRUE
 b. (===).   Strict equal       5===5                 True
 c.  ===       (type+value)       5 === "5"           FALSE
 d. !=       Not equal.           5 != "5"            FALSE
@@ -307,8 +307,8 @@ c. !       Logical NOT.   !true → false
 5. String Operators=Used to manipulate strings.
 
 Operator   |   Description             | Example                         | Result
-a. +         String Concatenation         "Hello" + "World" =                   "Hello World"
-b. +=.       Concatenation assign       let x = "Hi "; x += "Adil"; =           "Hi Adil"
+a. +         String Concatenation         "Hello" + "World"                "Hello World"
+b. +=       Concatenation assign       let x = "Hi "; x += "Adil";         "Hi Adil"
 
 
 String = ""
@@ -316,4 +316,23 @@ String = ""
 Boolean = true/false (1/0)
 
 Number = 123
+
+1.push
+array.push() -> stores/added data into array
+
+2.pop
+array.pop() -> deletes record from array.
+
+3.slice
+array.slice() -> creates a new array after working on the array.
+
+
+var array = [10,9,2,5,2,5,]
+array.slice(1)
+sliced array = [10,2,5,2,5,]
+
+Conditional Statements:
+if
+else if
+else
 

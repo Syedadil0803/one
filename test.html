@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>core js data structure</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+        let fruits = ["Apple", "Banana", "Mango", "Orange"];
+         //console.log(fruits);
+
+        // console.log(fruits[2]);
+
+        // fruits.push("Grapes");
+        // console.log(fruits);
+
+
+        // fruits.pop();
+        // console.log(fruits);
+
+
+        // fruits.shift();
+         //console.log(fruits);
+
+        // fruits.unshift("Pineapple");
+        // console.log(fruits);
+
+
+        // let allfruits = fruits.concat(["Pineapple", "Kiwi"]);
+        // console.log(allfruits);
+
+        // fruits.forEach(function(item, index){
+        //     console.log(index, item);
+        // });
+
+
+        // fruits.forEach((item, index) => {
+        //     console.log(index, item);
+        // });
+
+
+
+        // let person = {
+        //     name:"adil"
+        //     , age: 24
+        //     , city: "karachi"
+        // };
+
+
+        // console.log(person);
+        // console.log(person.name);
+        // console.log(person["age"]);
+
+
+    //  function greet(name){
+    //     return "Hello, " + name + "!";
+    //  }
+    //  console.log(greet("Adil"));
+
+
+    let students = [
+        {name: "Adil", age: 24, city: "Karachi"},
+        {name: "Sara", age: 12, city: "Lahore"},
+        {name: "Ahmed", age: 19, city: "Islamabad"}
+    ]
+
+
+    students.forEach(function(student){
+        console.log(student.name + " is " + student.age + " years old and lives in " + student.city);
+    });
+
+
+    let adults = students.filter(function(student){
+        return student.age >= 18;
+    })
+    console.log("Adults:", adults);
+
+
+   
+    </script>
+</body>
+</html>
