@@ -336,3 +336,4 @@ if
 else if
 else
 
+The <span> tag in HTML is an inline container used to style, highlight, or manipulate a specific portion of text or content without breaking the flow of the line. It’s commonly used with CSS or JavaScript to apply styles or add interactivity to small parts of a webpage.

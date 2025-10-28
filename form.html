@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form>
+        Name : <input type="text" id="name" placeholder="Enter Your Name Here!" />
+        <br /><br />
+        Email : <input type="text" id="email" placeholder="Enter Your Email Here!" />
+        <br /><br />
+        Phone : <input type="text" id="phone" placeholder="Enter Your Phone Here!" />
+        <br /><br />
+        Password : <input type="password" id="password" placeholder="Enter Your Password Here!" />
+        <br /><br />
+        Confirm Password : <input type="password" id="confpassword" placeholder="Enter Your Confirm Password Here!" />
+        <br /><br />
+        <input type="button" value="Submit" onclick="ValidateData()" />
+    </form>
+    <p id="message">
+    </p>
+
+    <script>
+
+        function ValidateData(){
+        var NAME = document.getElementById("name").value;
+       // console.log(NAME);
+        var EMAIL = document.getElementById("email").value;
+        // console.log(EMAIL);
+        var PHONE = document.getElementById("phone").value;
+        //console.log(PHONE);
+        var PASSWORD = document.getElementById("password");
+        var CONFPASSWORD = document.getElementById("confpassword");
+
+        if (NAME = " "){
+        document.getElementById("message").innerText="Name cannot be empty";
+        // document.getElementById("message").innerHTML="<span style='color:red'>Name cannot be empty</span>";
+        //document.getElementById("message").innerText="<span style='color:red'>Name cannot be empty</span>";
+        }
+
+        }
+
+
+        
+    </script>
+    
+
+    <script>
+        // console.log(/[0-9]/.test('abc')); // false //true
+        // console.log(/[0-9]/.test('123')); // true
+        // console.log(/[0-9]/.test('abc1')); // true
+        // console.log(/[A-Z]/.test('abc')); // false
+        // console.log(/[A-Z]/.test('ABC')); // true
+        // console.log(/[A-Z]/.test('aBC')); // true
+        // console.log(/[a-z]/.test('ABC')); // false
+    </script>
+
+</body>
+
+</html>
