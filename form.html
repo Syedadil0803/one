@@ -9,7 +9,7 @@
 
 <body>
 
-    <form>
+    <form id="formData">
         Name : <input type="text" id="name" placeholder="Enter Your Name Here!" />
         <br /><br />
         Email : <input type="text" id="email" placeholder="Enter Your Email Here!" />
@@ -24,6 +24,8 @@
     </form>
     <p id="message">
     </p>
+
+  
 
     <table>
         <thead>
@@ -76,6 +78,7 @@
             else {
                 document.getElementById("message").innerHTML = "<span style='color:green'>Form submitted successfully!</span>";
                 DisplayUsers(NAME, EMAIL, PHONE);
+                ClearForm();
             }
 
         }
@@ -88,12 +91,23 @@
 
             var row = "";
             for(let i=0; i<users.length; i ++){
-                row = row + "<tr><td>"+users[i].name+"</td><td>"+users[i].email+"</td><td>"+users[i].phone+"</td></tr>"
+                row = row + "<tr><td>"+users[i].name+"</td><td>"+users[i].email+"</td><td>"+users[i].phone+"</td><button onclick='EditUser("+ i +")'>Edit</button></tr>"
             }
              document.getElementById("usersData").innerHTML = row;
 
         }
 
+        function ClearForm(){
+            document.getElementById("formData").reset();
+
+        }
+
+
+        function EditUser(i){
+            document.getElementById("name").value = users[i].name;
+            document.getElementById("email").value = users[i].email;
+            document.getElementById("phone").value = users[i].phone;
+        }
 
 
     </script>
