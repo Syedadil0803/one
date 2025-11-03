@@ -337,3 +337,28 @@ else if
 else
 
 The <span> tag in HTML is an inline container used to style, highlight, or manipulate a specific portion of text or content without breaking the flow of the line. It’s commonly used with CSS or JavaScript to apply styles or add interactivity to small parts of a webpage.
+
+
+
+Understanding Cookies :
+
+Cookies are small pieces of data stored in the browser. They help websites remember information about users, like login status, preferences, or shopping cart items.
+
+Stored as name=value pairs.
+Useful for tracking small data across sessions.
+
+
+how we write a cookie :
+document.cookie = "username=JohnDoe; expires=Fri, 31 Dec 2024 23:59:59 GMT; path=/";
+
+how we read a cookie :
+console.log(document.cookie);
+// Output: "username=Adil;"
+
+
+Deleting Cookies :
+To delete a cookie, set its expiration date to the past:
+document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+
+Counting with Cookies :
+It Say you want to count how many times the user visited the page.
