@@ -134,6 +134,17 @@
 
         }
 
+          function DeleteUser(index) {
+        users.splice(index, 1);
+         var row = "";
+            for(let i=0; i<users.length; i ++){
+                row = row + "<tr><td>"+users[i].name+"</td><td>"+users[i].email+"</td><td>"+users[i].phone+"</td><td><button onclick='EditUser("+ i +")'>Edit</button></td><td><button onclick='DeleteUser(" + index + ")'>Delete</button></td></tr>"
+            }
+             document.getElementById("usersData").innerHTML = row;
+
+
+        }
+
 
     </script>
 
