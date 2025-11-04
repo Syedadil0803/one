@@ -369,8 +369,135 @@ CallBack fns :
 1. map()
 The map() method is used to loop through an array and create a new array with the result of applying a function to each element.
 
+
+eg :
+
+let nums = [1, 2, 3];
+let doubled = nums.map(num => num * 2);
+console.log(doubled); // Output: [2, 4, 6]
+
+
 2. setTimeout()
 The setTimeout() method runs a function once after a specified delay (in milliseconds).
 
 3. setInterval()
 The setInterval() method runs a function repeatedly, at a fixed time interval (in milliseconds), until stopped.
+
+
+
+1. Use map() to convert all strings in an array to uppercase?
+
+2. Use map() to get only the names from this array of objects:
+
+3.  Add a prefix to every item in an array using map()?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1.
+let names = ["adil", "sara", "john"];
+let upperNames = names.map(name => name.toUpperCase());
+console.log(upperNames); // Output: ["ADIL", "SARA", "JOHN"]
+
+
+2. 
+let users = [
+    { name: "Adil", age: 22 },
+    { name: "Sara", age: 25 },
+    { name: "Mike", age: 30 }
+];
+
+ans :
+let names = users.map(user => user.name);
+console.log(names); // Output: ["Adil", "Sara", "Mike"]
+
+
+3. 
+let fruits = ["Apple", "Banana", "Cherry"];
+let labeled = fruits.map(fruit => "Fruit: " + fruit);
+console.log(labeled); 
+// Output: ["Fruit: Apple", "Fruit: Banana", "Fruit: Cherry"]
+
+
+
+
+
