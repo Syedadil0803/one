@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookies</title>
+</head>
+
+<body>
+    <h1>Cookies Page</h1>
+
+
+
+
+
+    <script>
+        document.cookie = "FirstName=Adil; expires= 31 Dec 2025 23:59:59 IST; path=/";
+
+        document.cookie = "lastName=s; expires= 31 Dec 2025 23:59:59 IST; path=/";
+
+        document.cookie = "sessionToken=abc123; expires= 31 Dec 2025 23:59:59 IST; path=/";
+
+
+        //console.log(document.cookie);
+
+
+        function getCookie(name) {
+            let cookieArr = document.cookie.split(";");
+            for (let i = 0; i < cookieArr.length; i++) {
+                let cookiePair = cookieArr[i].split("=");
+                if (name == cookiePair[0].trim()) {
+                    return decodeURIComponent(cookiePair[1]);
+                }
+            }
+            return null;
+        }
+        console.log(getCookie("FirstName"));
+        console.log(getCookie("sessionToken"));
+        console.log(getCookie("lastName"));
+    </script>
+</body>
+
+</html>
