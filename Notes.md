@@ -362,3 +362,15 @@ document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 
 5. Counting with Cookies :
 It Say you want to count how many times the user visited the page.
+
+
+CallBack fns :
+
+1. map()
+The map() method is used to loop through an array and create a new array with the result of applying a function to each element.
+
+2. setTimeout()
+The setTimeout() method runs a function once after a specified delay (in milliseconds).
+
+3. setInterval()
+The setInterval() method runs a function repeatedly, at a fixed time interval (in milliseconds), until stopped.
