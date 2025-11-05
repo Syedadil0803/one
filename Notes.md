@@ -403,6 +403,44 @@ num = 3 * 2 (2)
 fruit : apple, fruit:  banana, fruit:, grapes
 
 
+2. 
+// function sayHello() {
+//   alert("Hello ")
+// }
+
+// setTimeout(sayHello, 4000); 
+
+
+
+3. 
+// function sayHelloInterval() {
+//   alert("Hello ");
+// }
+
+// setInterval(sayHelloInterval, 3000);
+
+
+Async/Await
+javascript async and await;
+1.to create responsive applications in javascript
+2.to execute concurrent process
+3.no block state or no need to wait till function ends.
+
+
+
+return new Promise((resolve =>{})(rejected=>{}));
+
+
+javascript promise
+1.it is a special javascript object
+2.it will return either resolved or rejected status
+3.it always returns response, it wont break during transaction/process
+4.reject and resolve both are callback functions it will execute either anyone
+5.we access promise by method :
+then()
+catch()
+
+React Notes
 
 
 
