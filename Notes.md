@@ -363,19 +363,16 @@ document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 5. Counting with Cookies :
 It Say you want to count how many times the user visited the page.
 
+count = "1...n"
+string concat + count +
+template literals `${count}`
+
+
 
 CallBack fns :
 
 1. map()
 The map() method is used to loop through an array and create a new array with the result of applying a function to each element.
-
-
-eg :
-
-let nums = [1, 2, 3];
-let doubled = nums.map(num => num * 2);
-console.log(doubled); // Output: [2, 4, 6]
-
 
 2. setTimeout()
 The setTimeout() method runs a function once after a specified delay (in milliseconds).
@@ -383,13 +380,27 @@ The setTimeout() method runs a function once after a specified delay (in millise
 3. setInterval()
 The setInterval() method runs a function repeatedly, at a fixed time interval (in milliseconds), until stopped.
 
+eg :
 
+let nums = [1, 2, 3];
+let doubled = nums.map(num => num * 2);
+console.log(doubled); // Output: [2, 4, 6]
 
-1. Use map() to convert all strings in an array to uppercase?
+(num => num * 2)
 
-2. Use map() to get only the names from this array of objects:
+num = 1 * 2 (0)
+num = 2 *2 (1)
+num = 3 * 2 (2)
 
-3.  Add a prefix to every item in an array using map()?
+1. create a function to double the give array [1,2,3]
+
+2. Use map() to convert all strings in an array to uppercase? toUp
+
+3. Use map() to get only the names from this array of objects:
+
+4.  Add a prefix to every item in an array using map()?
+
+fruit : apple, fruit:  banana, fruit:, grapes
 
 
 
