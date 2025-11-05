@@ -21,13 +21,13 @@
         Confirm Password : <input type="password" id="confpassword" placeholder="Enter Your Confirm Password Here!" />
         <br /><br />
         <input type="button" value="Submit" onclick="ValidateData()" />
-  
+
         <input type="button" value="Update" onclick="UpdateUserData()" />
     </form>
     <p id="message">
     </p>
 
-  
+
 
     <table>
         <thead>
@@ -92,55 +92,55 @@
             console.log(users);
 
             var row = "";
-            for(let i=0; i<users.length; i ++){
-                row = row + "<tr><td>"+users[i].name+"</td><td>"+users[i].email+"</td><td>"+users[i].phone+"</td><button onclick='EditUser("+ i +")'>Edit</button></tr>"
+            for (let i = 0; i < users.length; i++) {
+                row = row + "<tr><td>" + users[i].name + "</td><td>" + users[i].email + "</td><td>" + users[i].phone + "</td><button onclick='EditUser(" + i + ")'>Edit</button></tr>"
             }
-             document.getElementById("usersData").innerHTML = row;
+            document.getElementById("usersData").innerHTML = row;
 
         }
 
-        function ClearForm(){
+        function ClearForm() {
             document.getElementById("formData").reset();
 
         }
 
 
         var assignedindex
-        function EditUser(i){
+        function EditUser(i) {
 
             assignedindex = i
 
             document.getElementById("name").value = users[i].name;
             document.getElementById("email").value = users[i].email;
             document.getElementById("phone").value = users[i].phone;
-                var row = "";
-            for(let i=0; i<users.length; i ++){
-                row = row + "<tr><td>"+users[i].name+"</td><td>"+users[i].email+"</td><td>"+users[i].phone+"</td><button onclick='EditUser("+ i +")'>Edit</button></tr>"
-            }
-             document.getElementById("usersData").innerHTML = row;
+            var row = "";
+            users.map((user, index) => {
+                row = row + "<tr><td>" + user.name + "</td><td>" + user.email + "</td><td>" + user.phone + "</td><td><button onclick='EditUser(" + index + ")'>Edit</button></td><td><button onclick='DeleteUser(" + index + ")'>Delete</button></td></tr>"
+            })
+            document.getElementById("usersData").innerHTML = row;
         }
 
 
-        function UpdateUserData(){
-            users[assignedindex].name =  document.getElementById("name").value ;
-            users[assignedindex].email =  document.getElementById("email").value ;
-            users[assignedindex].phone =  document.getElementById("phone").value ;
-                var row = "";
-            for(let i=0; i<users.length; i ++){
-                row = row + "<tr><td>"+users[i].name+"</td><td>"+users[i].email+"</td><td>"+users[i].phone+"</td><button onclick='EditUser("+ i +")'>Edit</button></tr>"
+        function UpdateUserData() {
+            users[assignedindex].name = document.getElementById("name").value;
+            users[assignedindex].email = document.getElementById("email").value;
+            users[assignedindex].phone = document.getElementById("phone").value;
+            var row = "";
+            for (let i = 0; i < users.length; i++) {
+                row = row + "<tr><td>" + users[i].name + "</td><td>" + users[i].email + "</td><td>" + users[i].phone + "</td><button onclick='EditUser(" + i + ")'>Edit</button></tr>"
             }
-             document.getElementById("usersData").innerHTML = row;
+            document.getElementById("usersData").innerHTML = row;
 
 
         }
 
-          function DeleteUser(index) {
-        users.splice(index, 1);
-         var row = "";
-            for(let i=0; i<users.length; i ++){
-                row = row + "<tr><td>"+users[i].name+"</td><td>"+users[i].email+"</td><td>"+users[i].phone+"</td><td><button onclick='EditUser("+ i +")'>Edit</button></td><td><button onclick='DeleteUser(" + index + ")'>Delete</button></td></tr>"
+        function DeleteUser(index) {
+            users.splice(index, 1);
+            var row = "";
+            for (let i = 0; i < users.length; i++) {
+                row = row + "<tr><td>" + users[i].name + "</td><td>" + users[i].email + "</td><td>" + users[i].phone + "</td><td><button onclick='EditUser(" + i + ")'>Edit</button></td><td><button onclick='DeleteUser(" + index + ")'>Delete</button></td></tr>"
             }
-             document.getElementById("usersData").innerHTML = row;
+            document.getElementById("usersData").innerHTML = row;
 
 
         }
