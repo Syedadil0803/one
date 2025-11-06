@@ -457,6 +457,11 @@ This is async behavior:
 
 4. Food delivered = function resolved
 
+
+response.json() → Converts the API data into a JavaScript object.
+await → Waits until the conversion is done.
+
+
 return new Promise((resolve =>{})(rejected=>{}));
 
 
