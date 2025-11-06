@@ -50,14 +50,41 @@
 
         //1. create a function to double the give array [1,2,3]
 
-        function doubleArray(arr) {
-            let result = [];
-            for (let i = 0; i < arr.length; i++) {
-                result.push(arr[i] * 2);
-            }
-            console.log(result);
-        }
-        doubleArray([1, 2, 3]);
+        // function doubleArray(arr) {
+        //     let result = [];
+        //     for (let i = 0; i < arr.length; i++) {
+        //         result.push(arr[i] * 2);
+        //     }
+        //     console.log(result);
+        // }
+        // doubleArray([1, 2, 3,4,5]);
+
+
+        // let nums = [1, 2, 3, 4, 5];
+        // let doubled = nums.map(function (num) {
+        //     return num * 2;
+        // });
+        // console.log(doubled);
+
+        // let doubled = nums.map(num => num * 2);
+        // console.log(doubled);
+
+
+        // let names = ["Adil", "Syed", "John", "Doe"];
+        // let uppercasenames = names.map(name => name.toUpperCase());
+        // console.log(uppercasenames);
+
+
+        let users = [
+            { name: "Adil", age: 25 },
+            { name: "Syed", age: 30 },
+            { name: "John", age: 22 },
+            { name: "Doe", age: 28 }
+        ];
+
+
+        let userNames = users.map(user => user.name);
+        console.log(userNames[1]); 
 
 
 

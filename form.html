@@ -92,9 +92,12 @@
             console.log(users);
 
             var row = "";
-            for (let i = 0; i < users.length; i++) {
-                row = row + "<tr><td>" + users[i].name + "</td><td>" + users[i].email + "</td><td>" + users[i].phone + "</td><button onclick='EditUser(" + i + ")'>Edit</button></tr>"
-            }
+            // for (let i = 0; i < users.length; i++) {
+            //     row = row + "<tr><td>" + users[i].name + "</td><td>" + users[i].email + "</td><td>" + users[i].phone + "</td><button onclick='EditUser(" + i + ")'>Edit</button></tr>"
+            // }
+             users.map((user, index) => {
+                row = row + "<tr><td>" + user.name + "</td><td>" + user.email + "</td><td>" + user.phone + "</td><td><button onclick='EditUser(" + index + ")'>Edit</button></td><td><button onclick='DeleteUser(" + index + ")'>Delete</button></td></tr>"
+            })
             document.getElementById("usersData").innerHTML = row;
 
         }
@@ -114,6 +117,9 @@
             document.getElementById("email").value = users[i].email;
             document.getElementById("phone").value = users[i].phone;
             var row = "";
+            //  for (let i = 0; i < users.length; i++) {
+            //     row = row + "<tr><td>" + users[i].name + "</td><td>" + users[i].email + "</td><td>" + users[i].phone + "</td><button onclick='EditUser(" + i + ")'>Edit</button></tr>"
+            // }
             users.map((user, index) => {
                 row = row + "<tr><td>" + user.name + "</td><td>" + user.email + "</td><td>" + user.phone + "</td><td><button onclick='EditUser(" + index + ")'>Edit</button></td><td><button onclick='DeleteUser(" + index + ")'>Delete</button></td></tr>"
             })

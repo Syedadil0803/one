@@ -425,8 +425,37 @@ javascript async and await;
 1.to create responsive applications in javascript
 2.to execute concurrent process
 3.no block state or no need to wait till function ends.
+4.async and await are used in JavaScript to work with asynchronous operations more easily.
+5.They allow code to wait for long tasks (like fetching data) without stopping the entire program.
 
 
+async -> Marks a function that may run tasks which take time.
+await -> Pauses the function until the function finishes, but does not block other code.
+Used for -> API calls, database operations, file reading, timers, etc.
+Benefit -> Code becomes easier to read and understand (looks like normal step-by-step code).
+
+
+Real-Life Example 
+
+Example: Ordering Food in a Restaurant
+
+1.You order biryani (this takes time to prepare).
+
+2. But you don’t stand in the kitchen waiting (that would block everything).
+
+3. Instead, you sit and talk with friends (other work continues).
+
+4. When the biryani is ready, the waiter delivers it (result comes later).
+
+This is async behavior:
+
+1.Order placed = Request sent
+
+2. Waiter prepares silently = Awaiting result
+
+3. You keep doing other things = Non-blocking
+
+4. Food delivered = function resolved
 
 return new Promise((resolve =>{})(rejected=>{}));
 
