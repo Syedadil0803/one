@@ -429,11 +429,14 @@ javascript async and await;
 5.They allow code to wait for long tasks (like fetching data) without stopping the entire program.
 
 
-async -> Marks a function that may run tasks which take time.
-await -> Pauses the function until the function finishes, but does not block other code.
+async -> Marks a function that may run tasks which take time(but returns promise(1/0)).
+await -> Pauses the function until the function(promise) finishes, but does not block other code.
 Used for -> API calls, database operations, file reading, timers, etc.
 Benefit -> Code becomes easier to read and understand (looks like normal step-by-step code).
 
+https://jsonplaceholder.typicode.com/
+
+https://jsonplaceholder.typicode.com/posts/1
 
 Real-Life Example 
 
@@ -455,7 +458,7 @@ This is async behavior:
 
 3. You keep doing other things = Non-blocking
 
-4. Food delivered = function resolved
+4. Food delivered = function(promise) resolved
 
 
 response.json() → Converts the API data into a JavaScript object.
