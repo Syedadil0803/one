@@ -469,6 +469,8 @@ return new Promise((resolve =>{})(rejected=>{}));
 
 
 javascript promise
+
+
 1.it is a special javascript object
 2.it will return either resolved or rejected status
 3.it always returns response, it wont break during transaction/process
