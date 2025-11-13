@@ -525,6 +525,9 @@ function Demo() {
 }
 export default Demo();
 
+1. function/component 
+2. component defination
+3. component calling(exporting) [to reuse this same component we must import the exported component to the file we are expecting to use it]
 
 
 
