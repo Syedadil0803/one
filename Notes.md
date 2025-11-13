@@ -530,7 +530,22 @@ export default Demo();
 3. component calling(exporting) [to reuse this same component we must import the exported component to the file we are expecting to use it]
 
 
+Bootstrap setup 
+1.
+npm install bootstrap@4.6.0
 
+2. to check installation status
+npm list bootstrap
+
+
+3.import css files
+import "bootstrap/dist/css/bootstrap.min.css";
+
+4.import js files
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+
+5.uninstall
+npm uninstall bootstrap
 
 
 
