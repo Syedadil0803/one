@@ -558,10 +558,20 @@ import "bootstrap/dist/css/bootstrap.min.css"
 
 
 
+React routing
 
+To Implement single page application
+To navigate one page to another page using routing
 
+React Routing Component
+1. BrowserRouter -> to handel browser navigation action 
+2. Routes -> Routes Will have route Configuration
+3. Route -> Route Path to be rendered Component based on ink url text
+4. Link -> to link to the path 
 
+To setup react routing need to install routing package 
 
+npm install react-router-dom
 
 
 
@@ -627,29 +637,6 @@ import "bootstrap/dist/css/bootstrap.min.css"
 
 
 
-1.
-let names = ["adil", "sara", "john"];
-let upperNames = names.map(name => name.toUpperCase());
-console.log(upperNames); // Output: ["ADIL", "SARA", "JOHN"]
-
-
-2. 
-let users = [
-    { name: "Adil", age: 22 },
-    { name: "Sara", age: 25 },
-    { name: "Mike", age: 30 }
-];
-
-ans :
-let names = users.map(user => user.name);
-console.log(names); // Output: ["Adil", "Sara", "Mike"]
-
-
-3. 
-let fruits = ["Apple", "Banana", "Cherry"];
-let labeled = fruits.map(fruit => "Fruit: " + fruit);
-console.log(labeled); 
-// Output: ["Fruit: Apple", "Fruit: Banana", "Fruit: Cherry"]
 
 
 
