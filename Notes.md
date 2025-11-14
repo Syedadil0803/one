@@ -573,6 +573,17 @@ To setup react routing need to install routing package
 
 npm install react-router-dom
 
+Flow of Routes
+Link => To
+
+To => path
+
+Routes => Route 
+
+Route => path,component
+
+index.js => BrowserRoutes 
+
 
 
 
