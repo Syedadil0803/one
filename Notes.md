@@ -584,6 +584,14 @@ Route => path,component
 
 index.js => BrowserRoutes 
 
+React hook
+1. useState ->
+.It lets you create and store a value inside your component that can change over time.
+.Think of it like a box where you keep something, and you can update what’s inside whenever you want.
+
+2. useEffect ->
+.It lets you run some code after the component renders (or when certain things change)
+.It’s like saying: "Hey React, when you show this component on the screen, run this code."
 
 
 
