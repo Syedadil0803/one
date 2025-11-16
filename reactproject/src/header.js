@@ -1,10 +1,12 @@
+import {Link, Route, Routes} from "react-router-dom"
+import HomeComponent from './home'
 function HeaderComponent() {
   return (
     <div>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">
+        <Link class="navbar-brand" to={" "}>
           Navbar
-        </a>
+        </Link>
         <button
           class="navbar-toggler"
           type="button"
@@ -20,9 +22,9 @@ function HeaderComponent() {
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">
-                Home <span class="sr-only">(current)</span>
-              </a>
+              <Link class="nav-link" to={"/home"}>
+                Home 
+              </Link>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
@@ -69,6 +71,11 @@ function HeaderComponent() {
           </form>
         </div>
       </nav>
+
+
+      <Routes>
+        <Route element={HomeComponent} path="/home"></Route>
+      </Routes>
     </div>
   );
 }
