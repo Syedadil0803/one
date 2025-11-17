@@ -8,4 +8,4 @@ function HomeComponent(){
 );
 }
 
-export default HomeComponent();
+export default HomeComponent;

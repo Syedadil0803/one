@@ -74,9 +74,9 @@ function HeaderComponent() {
 
 
       <Routes>
-        <Route element={HomeComponent} path="/home"></Route>
+        <Route element={<HomeComponent/>} path="/home"></Route>
       </Routes>
     </div>
   );
 }
-export default HeaderComponent();
+export default HeaderComponent;
