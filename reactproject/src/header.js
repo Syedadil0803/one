@@ -1,10 +1,11 @@
 import {Link, Route, Routes} from "react-router-dom"
 import HomeComponent from './home'
+import ContactUs from './contact'
 function HeaderComponent() {
   return (
     <div>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <Link class="navbar-brand" to={" "}>
+        <Link class="navbar-brand" to={""}>
           Navbar
         </Link>
         <button
@@ -75,6 +76,7 @@ function HeaderComponent() {
 
       <Routes>
         <Route element={<HomeComponent/>} path="/home"></Route>
+        <Route element={<ContactUs />} path=""></Route>
       </Routes>
     </div>
   );
