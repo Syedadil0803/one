@@ -595,10 +595,45 @@ React hook
 
 
 
+Component
+--> componet is a unit of logic, it contains javascript, css and html.
+--> it will return always html elements
+--> Every Component must be exported an Impoeted Before call/Access
+
+It has 2 types of components
+1. Functional Component
+-> stateless component
+-> it will follow react hooks
+
+
+2. Class Component
+-> statefull component
+-> it will follow life cycle
+
+Function Component vs Class Component in React 
+
+
+Feature         |   	Function Component                  |	Class Component
+
+Syntax                      Just a function                     Uses a class
+Code Simplicity             Short and clean                     More code, more setup
+Usage                       Mostly used now                      Used in older code            
 
 
 
+Function Components (with Hooks)
 
+1. Lightweight, easy syntax
+2. Use Hooks for state and lifecycle
+3. Better performance
+4. Recommended in modern React
+
+Class Components
+
+1. Old way
+2. Uses lifecycle methods
+3. More repeated code
+4. Mostly used only in legacy projects
 
 
 
