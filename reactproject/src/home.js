@@ -27,14 +27,14 @@ function HomeComponent() {
                 </tr>
             </thead>
             <tbody>
-               
+               {users.map(user=>(
                 <tr>
-                    <th>1</th>
-                    <td>user.name</td>
-                    <td>user.email</td>
-                    <td>user.phone</td>
+                    <th>{user.id}</th>
+                    <td>{user.name}</td>
+                    <td>{user.email}</td>
+                    <td>{user.phone}</td>
                 </tr>
-          
+          ))}
             </tbody>
         </table>
     );
