@@ -1,11 +1,11 @@
 import React from "react";
-class ContactUs extends React.Component{
+class Class extends React.Component{
     render(){
     return(
         <div>
-            Contact Us
+            Home Page
         </div>
     )
     }
 }
-export default ContactUs;
+export default Class;

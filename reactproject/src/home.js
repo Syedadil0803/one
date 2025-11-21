@@ -14,7 +14,7 @@ function HomeComponent() {
             setUsers(data);
         })
         .catch((err)=>console.log("Error fetching data ;", err))
-    },)
+    },[])
 
     return (
         <table class="table">

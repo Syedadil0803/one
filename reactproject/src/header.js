@@ -1,6 +1,7 @@
 import {Link, Route, Routes} from "react-router-dom"
 import HomeComponent from './home'
 import ContactUs from './contact'
+import Class from './cycle'
 function HeaderComponent() {
   return (
     <div>
@@ -27,10 +28,10 @@ function HeaderComponent() {
                 Home 
               </Link>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                Link
-              </a>
+            <li class="nav-item active">
+              <Link class="nav-link" to={"/lifecycle"}>
+                Cycle
+              </Link>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -77,6 +78,7 @@ function HeaderComponent() {
       <Routes>
         <Route element={<HomeComponent/>} path="/home"></Route>
         <Route element={<ContactUs />} path=""></Route>
+        <Route element={<Class/>} path="/lifecycle"></Route>
       </Routes>
     </div>
   );
