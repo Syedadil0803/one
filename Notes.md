@@ -636,7 +636,17 @@ Class Components
 4. Mostly used only in legacy projects
 
 
+Creating a server on react
 
+1. npm install json-server
+it wil create one dummy API with the temporary DB
+
+2. npx json-server --watch db.json(another terminal)
+it will start the server with the db.json file
+
+3. npm start
+
+Note. db.json file should be in the root directory.
 
 
 
